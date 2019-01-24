@@ -19,6 +19,7 @@ class ViewController: UIViewController {
             if let letPrecoGasolina = precoGasolina.text {
                 let validaCampos = self.validaCampos(precoAlcool: letPrecoAlcool,
                                                      precoGasolina: letPrecoGasolina)
+                
                 if validaCampos {
                     calcularMelhorPreco(precoAlcool: letPrecoAlcool, precoGasolina: letPrecoGasolina)
                 }else{
